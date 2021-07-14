@@ -3,7 +3,7 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Logger } from '../../util/log';
 import * as fileSaver from 'file-saver';
-import * as JSZip from 'JSZip';
+import * as JSZip from 'jszip';
 import Pica from 'pica';
 import { setTimeout } from 'timers';
 import { FileSpec, PlatformSpec, RGBA, BundleSpec, ImageSpec, ImageDataSet } from '../../models/models';
