@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM node:12.22.12-buster
-COPY . .
+RUN mkdir -p /app
+WORKDIR /app
+COPY . /app
 RUN npm install
 RUN npm run build
 
