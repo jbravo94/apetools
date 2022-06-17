@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:8.17.0-buster
+FROM node:12.22.12-buster
 COPY . .
 RUN npm install
 RUN npm run build
