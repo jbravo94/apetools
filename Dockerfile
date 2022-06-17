@@ -3,7 +3,6 @@ FROM node:16.15.1-bullseye
 RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
-RUN apt update && apt install -y python-is-python3
 RUN npm install
 RUN npm run build
 
